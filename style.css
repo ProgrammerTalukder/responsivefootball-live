@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.intro{
+    height: 677px;
+    width: 1440px;
+    margin:0;
+}
+.introduction{
+    display: flex;
+}
+.kick-image{
+    margin-top: 67px;
+    margin-right: 141px;
+}
+.beginning{
+    width:100%;
+    display: flex;
+    background-color: rgba(45, 37, 160, 1);
+    justify-content:center;
+}
+.nav{
+    margin: 42px 0 0 156px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color:white;
+    font-size:16px;
+}
+.login{
+    padding:10px 24px;
+    background-color: rgba(224, 44, 109, 1);
+    color:white;
+    font-size: 16px;
+
+}
+.fa-sign-in-alt {
+    padding-right: 8px;
+}
+.pages{
+    width: 587px;
+    display: flex;
+    justify-content:space-between;
+}
+.info{
+    margin: 121px 102px 169px 156px;
+}
+.title{
+    margin-bottom: 27px;
+    height: 230px;
+}
+.title h1{
+    color:white;
+    line-height:80px;
+    font-size:64px;
+    font-weight: bold;
+}
+.kick-image img{
+    width: 556.01px;
+    height: 438px;
+    transition: all 2s ease-in-out;
+}
+/* <transition hover effect */
+
+.beginning:hover .kick-image img{
+    transform: rotate(360deg);
+}
+.container{
+    width: 1050px;
+}
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:30px;
+    grid-row-gap:27px;
+    margin: 70px 0px 165px 0px;
+}
+.player{
+    padding:15px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+
+}
+.player img{
+    width: 100%;
+    height:256px;
+}
+.player-image{
+    height: 256px;
+}
+.name{
+    margin-top:16px;
+    margin-bottom:10px;
+}
+.name h2{
+    font-weight: bold;
+    font-size:28px;
+}
+
+/* Style of highlight part */
+
+.highlight{
+    width: 1440px;
+    display:flex;
+}
+.highlight-text{
+    margin:59px 0px;
+}
+.highlight-text h1{
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    padding-bottom: 8px;
+}
+.highlight-text p{
+    margin-bottom: 24px;
+}
+.highlight-image img{
+    height: 427px;
+    width: 567px;
+
+}
+.button{
+    display: flex;
+    background-color: rgba(224, 44, 109, 1);
+}
+.text{
+    align-items:center;
+    justify-content:center;
+    margin-right: 66px;
+    margin-left:182px;
+}
+.button{
+    height: 44px;
+    width: 173px;
+
+}
+.button a{
+    padding: 10px 24px;
+    color: #ffff;
+    text-decoration: none;
+}
+.button i{
+    color: #fff;
+    margin-left: 8px;
+}
+.highlight-image{
+    margin-right:156px;
+}
+/* <---Footer design---> */
+
+footer{
+    margin-top:132px;
+    margin-bottom:63px;
+}
+.football-footer{
+    text-align:center;
+}
+.social-icon{
+    display: flex;
+    justify-content:center;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+.icon{
+    margin-right: 14px;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    background-color:rgba(11, 13, 23, 1);
+    border-radius:15px;
+}
+.social{
+    position:absolute;
+    color: rgba(150, 155, 171, 1);
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+
+}
+.copyright{
+    font-size: 18px;
+    font-weight:400;
+}
+
+/* Making responsive with medai quary */
+
+@media screen and (max-width:360px){
+    .nav{
+        display: none;
+    }
+    .info{
+        margin: 112px 66px 50px 16px;
+    }
+    .kick-image img{
+        width: 329px;
+        height: 259.17px;
+    }
+    .kick-image{
+        margin: 0 16px 62px 15px;
+    }
+    .introduction{
+        flex-direction: column;
+    }
+    .title h1{
+        color:white;
+        line-height:50px;
+        font-size:36px;
+        font-weight: bold;
+    }
+    .beginning{
+        width:100%;
+        display: flex;
+        background-color: rgba(45, 37, 160, 1);
+        justify-content:center;
+    }
+    .intro{
+        height:auto;
+    }
+    .title{
+        margin-bottom: 30px;
+        height: 138px;
+    }
+    .container{
+        width: auto;
+        margin-top: 47px;
+    }
+    .all-players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap:24px;
+        margin: 0px 15px 0px 15px;
+    }
+    .player{
+        padding:15px;
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    }
+    .highlight{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height:auto;
+
+    }
+
+    .highlight-image img{
+        width: 328px;
+        height: 248px;
+    
+    }
+    .highlight-text{
+        margin:0px 0px 15px 0px;
+    }
+    .text{
+        align-items:center;
+        justify-content:center;
+        margin-top: 60px;
+        margin-right: 16px;
+        margin-left:15px;
+    }
+    .highlight-text h1{
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 40px;
+        font-style: normal;
+        padding-bottom: 8px;
+    }
+    .highlight-image{
+        margin: 29px 16px 43px 16px;
+    }
+    #football{
+        height:100px;
+        width:100px;
+        border-radius:50px;
+        background-color: aqua;
+    }
+    footer{
+        margin-top:0px;
+        margin-bottom:187px;
+        width:100%;
+        height:auto;
+    }
+    .footer-img{
+        width: 281px;
+        height:63px;
+        margin-left: 18px;
+        margin-right:71px;
+    }
+    .footer-img img{
+        width:100%;
+    }
+}
